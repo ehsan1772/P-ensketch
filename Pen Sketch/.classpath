@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="PictureSamples"/>
+	<classpathentry kind="src" path="testfolder"/>
+	<classpathentry kind="src" path="samplepictures"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="libs/AdWhirlSDK_Android_3.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/GoogleAdMobAdsSdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/MMAdView.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/zestadz_android_sdkv1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/InMobiAndroidSDK.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mdotm-sdk-android.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

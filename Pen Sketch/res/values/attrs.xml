@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name = "com.komlimobile.sdk.KomliMobileView">
+<attr name="mode" format="string" />
+<attr name="textSize" format="integer" />
+<attr name="textColor" format="color" />
+<attr name="adRefresh" format="integer" />
+<attr name="adType" format="string" />
+       <attr name="adSize" format="string" />
+        <attr name="rmaSupport" format="string" />
+     </declare-styleable>
+</resources>

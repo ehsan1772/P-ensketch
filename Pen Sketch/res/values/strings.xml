@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Pen Sketch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Pen Sketch</string>
+    <color name="gray">#696969</color>
+    <color name="white">#FFFAF0</color><string name="bname">ButtonText</string>
+    
+    
+
+</resources>
