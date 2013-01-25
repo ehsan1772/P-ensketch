@@ -196,7 +196,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 	SketchBackground shsk;
 	Opencamera oc;
 
-	
+	// test git
 	
 	
 //    @Override
