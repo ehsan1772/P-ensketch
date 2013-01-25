@@ -198,6 +198,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 
 	// test git
 	//test git2
+	//test git3
 	
 	
 //    @Override
