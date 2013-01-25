@@ -364,29 +364,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 		
 		final RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.relativeLayout0);
 		
-		// MMAdview Start
-		
-//		Hashtable<String, String> map = new Hashtable<String, String>();
-//	    map.put("age", "30");
-//	    map.put("zip", "90210");
-//	    map.put("income", "65000");
-//	    //include additional metadata or settings in the hashmap
-//
-//	    com.millennialmedia.android.MMAdView MMMadView = new com.millennialmedia.android.MMAdView(this, "93612", MMAdView.BANNER_AD_BOTTOM, 30, map);
-//	    MMMadView.setId(MMAdViewSDK.DEFAULT_VIEWID);
-	    
-		// MMAdview finished
-		
-		// Komilmobile starts
-		
-	//	com.komlimobile.sdk.KomliMobileView kmview = (RelativeLayout) findViewById(R.id);
-		
-		
-		
-		// komilmobile ends
-	    
-		
-		//adwhirl starts
+
 	    
 		AdWhirlManager.setConfigExpireTimeout(1000*60*5);
 		
@@ -412,14 +390,10 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 		   
 	 
 		   adWhirlLayout.setAdWhirlInterface(this);
-		//   adWhirlLayout.setMaxWidth((int)(diWidth * density));
-		//   adWhirlLayout.setMaxHeight((int)(diHeight * density));
 		   
 		 
 		   layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//		   layoutParams.addRule(RelativeLayout.ABOVE, R.id.relativeLayout1);
-
-		 
+ 
 
 
 		   adcontainer = (RelativeLayout) findViewById(R.id.adlayout);
@@ -754,38 +728,43 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 					
 					if (sv.sketchloaded == false)
 					{
-						sv.sketchloading = true;
-					sv.backgroundoriginal = sv.backgroundscaled;
-					
-					scaled = sv.backgroundscaled;
-					
-
-					
-					pb1 = (ProgressBar)findViewById(R.id.pb1);
-					
-					pb1.setMax(scaled.getHeight());
-					
-					mlayout.removeView(pb1);
-					
-					mlayout.addView(pb1);
-					
-
-
-					oarray = null;
-
-									
-					
-					bgw1 = new backgroundworker1(scaled, pb1, sv, "Green", setclick);
-//					bgw1.lbrown = Color.rgb(90, 127, 106);
-//					bgw1.main = Color.rgb(37, 65, 50);
-					bgw1.background = BitmapFactory.decodeResource(getResources(), R.drawable.background);
-					
-					bgw1.strength = strength;
-					oldstrength = strength;
-
-					pb1.setVisibility(View.VISIBLE);
-					bgw1.execute(oarray);
-					break;
+						
+				        Intent intent = new Intent(context, TestActivity.class);
+				        startActivity(intent);
+				        break;
+				        
+//						sv.sketchloading = true;
+//					sv.backgroundoriginal = sv.backgroundscaled;
+//					
+//					scaled = sv.backgroundscaled;
+//					
+//
+//					
+//					pb1 = (ProgressBar)findViewById(R.id.pb1);
+//					
+//					pb1.setMax(scaled.getHeight());
+//					
+//					mlayout.removeView(pb1);
+//					
+//					mlayout.addView(pb1);
+//					
+//
+//
+//					oarray = null;
+//
+//									
+//					
+//					bgw1 = new backgroundworker1(scaled, pb1, sv, "Green", setclick);
+////					bgw1.lbrown = Color.rgb(90, 127, 106);
+////					bgw1.main = Color.rgb(37, 65, 50);
+//					bgw1.background = BitmapFactory.decodeResource(getResources(), R.drawable.background);
+//					
+//					bgw1.strength = strength;
+//					oldstrength = strength;
+//
+//					pb1.setVisibility(View.VISIBLE);
+//					bgw1.execute(oarray);
+//					break;
 					}
 			
 					else

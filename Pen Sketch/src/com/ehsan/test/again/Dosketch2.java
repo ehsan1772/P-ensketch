@@ -20,8 +20,8 @@ public class Dosketch2 extends AsyncTask<Object, Integer, Boolean>{
 	ProgressBar pb;
 	Sketchview sv;
 	public String target;
-	int lblack = Color.rgb(100, 100, 100);
-	int dblack = Color.rgb(47, 47, 47);
+	private final static int lblack = Color.rgb(100, 100, 100);
+	private final static int dblack = Color.rgb(47, 47, 47);
 	int lbrown = Color.rgb(128, 85, 86);
 	int dbrown = Color.rgb(86, 28, 29);
 	int lblue = Color.rgb(122, 133, 155);
@@ -31,17 +31,12 @@ public class Dosketch2 extends AsyncTask<Object, Integer, Boolean>{
 	int lcolor;
 	int dcolor;
 	
-	public Dosketch2(Bitmap image, ProgressBar pbar, Sketchview view)
-	{
+	public Dosketch2(Bitmap image, ProgressBar pbar, Sketchview view){
 		pb = pbar;
 		pb.bringToFront();
 		sv = view;
 		result = Color.WHITE;
 		myimage = image;
-
-
-		
-
 	}
 
 

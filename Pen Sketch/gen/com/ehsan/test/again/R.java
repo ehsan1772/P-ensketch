@@ -104,6 +104,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int adlayout=0x7f090021;
+        public static final int adlayout2=0x7f090022;
         public static final int button1=0x7f090006;
         public static final int button2=0x7f090007;
         public static final int button3=0x7f090008;
@@ -118,7 +119,7 @@ containing a value of this type.
         public static final int imageButton1=0x7f090003;
         public static final int imageButton2=0x7f090004;
         public static final int lowerribbon=0x7f09000a;
-        public static final int menu_settings=0x7f090022;
+        public static final int menu_settings=0x7f090023;
         public static final int pb1=0x7f090012;
         public static final int photob=0x7f09000c;
         public static final int photob1=0x7f090017;
@@ -141,6 +142,7 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int first3surfaceview=0x7f030000;
+        public static final int justatry=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
