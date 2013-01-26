@@ -89,7 +89,7 @@ import com.adwhirl.AdWhirlManager;
 import com.adwhirl.AdWhirlTargeting;
 import com.ehsan.test.again.Sketchview;
 
-
+// test 1
 
 @TargetApi(9)
 public class MainActivityforpensketch extends Activity implements SurfaceHolder.Callback, OnTouchListener, AdWhirlInterface {
@@ -368,25 +368,17 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 	    
 		AdWhirlManager.setConfigExpireTimeout(1000*60*5);
 		
-		
-		  // AdWhirlTargeting.setAge(23);
-		   
-		 //  AdWhirlTargeting.setGender(AdWhirlTargeting.Gender.MALE);
-		 //  AdWhirlTargeting.setKeywords("online games gaming");
-		 //  AdWhirlTargeting.setPostalCode("75074");
+
 		   AdWhirlTargeting.setTestMode(false);
 		
 		final AdWhirlLayout adWhirlLayout = new AdWhirlLayout(this,
                 "7f37fb4ded8b4c6c97ec686263f24e84");
+	
 		   
-//			final AdWhirlLayout adWhirlLayout = (AdWhirlLayout) findViewById(R.id.adlayout2);
 
-		   
 		layoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 
-		   int diWidth = 320;
-		   int diHeight = 52;
-		   int density = (int) getResources().getDisplayMetrics().density;
+
 		   
 	 
 		   adWhirlLayout.setAdWhirlInterface(this);
@@ -401,43 +393,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 
 
    adcontainer.addView(adWhirlLayout, layoutParams);
-	//	   adcontainer.addView(adWhirlLayout);
-//   adcontainer.invalidate();
 
-//		   mlayout.addView(MMMadView, layoutParams);
-	//	   adcontainer.addView(kmview);
- //  adcontainer.bringToFront();
-		   
-//   mlayout.addView(adWhirlLayout, layoutParams);
-
-//adwhirl finish
-		   
-		   
-		
-	    // Create the adView
-	    
-
-	    // Lookup your LinearLayout assuming it’s been given
-	    // the attribute android:id="@+id/mainLayout"
-	    
-//		adView = new AdView(this, AdSize.BANNER, "a14fff2a5bbb315");
-//		
-//		RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-//		
-//
-//		params.addRule(RelativeLayout.ABOVE, R.id.relativeLayout1);
-//		
-//
-//	    // Add the adView to it
-//	    mlayout.addView(adView, params);
-//
-//	    // Initiate a generic request to load it with an ad
-//	    AdRequest adrequest = new AdRequest();
-//	    
-//	   
-//	    
-//	    //adrequest.addTestDevice(AdRequest.TEST_EMULATOR);
-//	    adView.loadAd(adrequest);
 		
 
 		
