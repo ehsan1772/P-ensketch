@@ -56,3 +56,6 @@ public class Opencamera extends AsyncTask<Object, Integer, Boolean>{
 
 	}
 }
+
+
+

@@ -93,7 +93,7 @@ import com.ehsan.test.again.Sketchview;
 // test 2
 
 @TargetApi(9)
-public class MainActivityforpensketch extends Activity implements SurfaceHolder.Callback, OnTouchListener, AdWhirlInterface {
+public class MainActivityforpensketch extends Activity implements SurfaceHolder.Callback, OnTouchListener, AdWhirlInterface, CameraStarter {
 	Button b1;
 	Button b2;
 	Button b3;
@@ -187,7 +187,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 	RelativeLayout.LayoutParams layoutParams;
 	
 //	AdView adView;
-	AdWhirlLayout adWhirlLayout;
+	MyAd adWhirlLayout;
 	RelativeLayout adcontainer;
 	
 	Canvas canvas2;
@@ -196,6 +196,8 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 	boolean cropm = false;
 	SketchBackground shsk;
 	Opencamera oc;
+	
+//	final MyAd adWhirlLayout;
 
 	// test git
 	//test git2
@@ -241,21 +243,9 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 	}
 
 
-//	@Override
-//	protected void onStop() {
-//		// TODO Auto-generated method stub
-//
-//
-//		super.onStop();
-//	}
-
-
 	@Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
-//		Toast toast = Toast.makeText(this, "onResume", Toast.LENGTH_SHORT);
-//		toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-//		toast.show();
+
 		
 		super.onResume();
 
@@ -279,12 +269,6 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 	}
 
 
-	@Override
-	public void finish() {
-		// TODO Auto-generated method stub
-
-		super.finish();
-	}
 
 
 
@@ -372,8 +356,8 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 
 		   AdWhirlTargeting.setTestMode(false);
 		
-		final AdWhirlLayout adWhirlLayout = new AdWhirlLayout(this,
-                "7f37fb4ded8b4c6c97ec686263f24e84");
+	//	final AdWhirlLayout adWhirlLayout = new AdWhirlLayout(this,"7f37fb4ded8b4c6c97ec686263f24e84");
+		final MyAd adWhirlLayout = new MyAd(this, "7f37fb4ded8b4c6c97ec686263f24e84");
 	
 		   
 
@@ -687,6 +671,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 					{
 						
 				        Intent intent = new Intent(context, TestActivity.class);
+				        intent.putExtra("ad", adWhirlLayout);
 				        startActivity(intent);
 				        break;
 				        
@@ -1852,6 +1837,9 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 		valueb2.setClickable(b);
 		shareb.setClickable(b);
 	}
+
+
+
 }
 	
 	

@@ -109,6 +109,7 @@ containing a value of this type.
         public static final int button2=0x7f090007;
         public static final int button3=0x7f090008;
         public static final int button4=0x7f090009;
+        public static final int cameraRotate=0x7f090025;
         public static final int cameraoverlay=0x7f090011;
         public static final int colorlayout=0x7f090005;
         public static final int content=0x7f090014;
@@ -119,14 +120,16 @@ containing a value of this type.
         public static final int imageButton1=0x7f090003;
         public static final int imageButton2=0x7f090004;
         public static final int lowerribbon=0x7f09000a;
-        public static final int menu_settings=0x7f090023;
+        public static final int menu_settings=0x7f090026;
         public static final int pb1=0x7f090012;
+        public static final int photoAction=0x7f090024;
         public static final int photob=0x7f09000c;
         public static final int photob1=0x7f090017;
         public static final int photob2=0x7f090018;
         public static final int photob3=0x7f090019;
         public static final int photosdLinear=0x7f090016;
         public static final int photosdLinearv=0x7f09001d;
+        public static final int ps_camera_root=0x7f090023;
         public static final int relativeLayout0=0x7f090000;
         public static final int relativeLayout1=0x7f090001;
         public static final int saveb=0x7f09000f;
@@ -143,6 +146,7 @@ containing a value of this type.
     public static final class layout {
         public static final int first3surfaceview=0x7f030000;
         public static final int justatry=0x7f030001;
+        public static final int ps_camera=0x7f030002;
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
