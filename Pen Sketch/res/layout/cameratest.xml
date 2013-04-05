@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+                     <FrameLayout
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+            </FrameLayout>
+<RelativeLayout
+                                android:id="@+id/photoAction"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" 
+                                android:layout_alignParentBottom="true"
+                                >
+                                
+
+                                <ImageButton
+		                           android:id="@+id/imageButton1"
+		                           android:scaleType="fitCenter"
+		                           android:layout_width="58dp"
+		                           android:layout_height="58dp"
+		                           android:background="@null"
+		                           android:layout_alignParentLeft="true"
+		                           android:paddingBottom="5dp"
+		                           android:src="@drawable/cancel" />
+
+                           		<ImageButton
+	                               android:id="@+id/imageButton222"
+	                               android:layout_width="60dp"
+	                               android:layout_height="60dp"
+	                               android:background="@null"
+	                               android:paddingBottom="5dp"
+	                               android:scaleType="fitCenter"
+	                               android:layout_alignParentRight="true"
+	                               android:src="@drawable/ok" />
+                           		                                <Button
+                                android:layout_below="@id/imageButton1"                            
+                                android:id="@+id/cameraRotate"
+                                android:layout_width="40dp"
+                                android:layout_height="55dp"
+                                android:background="@drawable/cameraswitch"
+								android:layout_centerHorizontal="true"
+                                android:paddingBottom="1dp" />
+
+                            </RelativeLayout>
+
+</LinearLayout>

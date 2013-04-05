@@ -771,16 +771,18 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 					
 				case R.id.photob1:
 						
+					Intent intent = new Intent(MainActivityforpensketch.this, PS_CameraActivity.class);
+					startActivity(intent);
 
-					scaled = null;
-			        sv = new Sketchview(context);
-					sv = (Sketchview) findViewById(R.id.surfaceView1);
-					sv.sketchloaded = false;
-					sv.sketchloading = false;
-					
-					
-					photosd.close();
-					photomode("on");
+//					scaled = null;
+//			        sv = new Sketchview(context);
+//					sv = (Sketchview) findViewById(R.id.surfaceView1);
+//					sv.sketchloaded = false;
+//					sv.sketchloading = false;
+//					
+//					
+//					photosd.close();
+//					photomode("on");
 			
 					break;
 					
@@ -1501,6 +1503,8 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 		else
 		{
 		if (cv == null)
+			
+			Log.d("The size = ", thesize.height + " , " + thesize.width);
 	        cv = new Cameraview(this);
 			
 			
@@ -1836,6 +1840,12 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 		valueb1.setClickable(b);
 		valueb2.setClickable(b);
 		shareb.setClickable(b);
+	}
+
+
+	public void startCamera() {
+		// TODO Auto-generated method stub
+		
 	}
 
 

@@ -58,6 +58,8 @@
 		android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
                         <activity
             android:name=".TestActivity"/>
+                                                <activity
+            android:name=".PS_CameraActivity"/>
 <meta-data android:name="client_ID" android:value="14131C047A5040474359405649544B5C8D8720C8" />
     </application>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
