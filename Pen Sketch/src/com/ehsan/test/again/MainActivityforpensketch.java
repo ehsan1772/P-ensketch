@@ -771,7 +771,7 @@ public class MainActivityforpensketch extends Activity implements SurfaceHolder.
 					
 				case R.id.photob1:
 						
-					Intent intent = new Intent(MainActivityforpensketch.this, PS_CameraActivity.class);
+					Intent intent = new Intent(MainActivityforpensketch.this, PS_CameraActivity_onMeasure.class);
 					startActivity(intent);
 
 //					scaled = null;

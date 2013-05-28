@@ -4,14 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <!--
-                <com.ehsan.test.again.Cameraoverlay
-                android:id="@+id/cameraoverlay"
-                android:layout_width="wrap_content"
-                android:layout_above="@id/relativeLayout1"
-                android:layout_height="wrap_content"
-                 />
-    -->
+    <com.ehsan.test.again.PS_CameraView2_onMeasure
+        android:id="@+id/camera_onmeasure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <RelativeLayout
         android:id="@+id/photoAction"
@@ -48,12 +44,5 @@
             android:background="@drawable/cameraswitch"
             android:paddingBottom="1dp" />
     </RelativeLayout>
-
-    <FrameLayout
-        android:id="@+id/ps_camera_preview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/photoAction" >
-    </FrameLayout>
 
 </RelativeLayout>
